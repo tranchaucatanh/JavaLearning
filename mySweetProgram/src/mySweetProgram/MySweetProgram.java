@@ -16,28 +16,28 @@ public class MySweetProgram {
 		Scanner in = new Scanner(new File("pet.txt"));
 		
 		// create list
-		List<String> pets = new ArrayList<String>();
+		List<String> petsList = new ArrayList<String>();
 		
 		//Read input to list
 		while (in.hasNext()) {
-			pets.add(in.nextLine());
+			petsList.add(in.nextLine());
 		} 
 		
 		// Simple loop
 		System.out.println("Print loop:");
-		for (int i=0; i<pets.size(); i++) {
-			System.out.println(pets.get(i));
+		for (int i=0; i<petsList.size(); i++) {
+			System.out.println(petsList.get(i));
 		}
 		System.out.println();
 		
 		System.out.println("Adding chicken and snake");
 		// Adding to list
-		pets.add("Chicken");
-		pets.add("Snake");
+		petsList.add("Chicken");
+		petsList.add("Snake");
 		
 		System.out.println("Print loop:");
 		// For each loop
-		for (String pet: pets) {
+		for (String pet: petsList) {
 			System.out.println(pet);
 		}
 		System.out.println();
@@ -45,7 +45,7 @@ public class MySweetProgram {
 		System.out.println("Print loop:");
 		
 		// Using iterator
-		Iterator<String> petEach = pets.iterator();
+		Iterator<String> petEach = petsList.iterator();
 		
 		while(petEach.hasNext())
 		{
@@ -53,7 +53,7 @@ public class MySweetProgram {
 		}
 		
 		// Using iterator for each 
-		pets.forEach((pet)->{System.out.println(pet);}); 
+		petsList.forEach((pet)->{System.out.println(pet);}); 
 		
 		
 		in.close();
