@@ -24,27 +24,23 @@ public class MySweetProgram {
 		} 
 		
 		// Simple loop
-		System.out.println("Print loop:");
 		for (int i=0; i<petsList.size(); i++) {
 			System.out.println(petsList.get(i));
 		}
-		System.out.println();
 		
-		System.out.println("Adding chicken and snake");
-		// Adding to list
+		
+		// Adding to ArrayList petsList
 		petsList.add("Chicken");
 		petsList.add("Snake");
 		
-		System.out.println("Print loop:");
-		// For each loop
+
+		//  Range loop
 		for (String pet: petsList) {
 			System.out.println(pet);
 		}
-		System.out.println();
+
 		
-		System.out.println("Print loop:");
-		
-		// Using iterator
+		// Using iterator // check listIterator
 		Iterator<String> petEach = petsList.iterator();
 		
 		while(petEach.hasNext())
